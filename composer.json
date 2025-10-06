@@ -1,0 +1,41 @@
+{
+    "name": "dgtlinf/payslip",
+    "description": "Generate professional PDF payslips using salary data from dgtlinf/salary-calculator.",
+    "keywords": [
+        "laravel",
+        "salary",
+        "payslip"
+    ],
+    "type": "library",
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "spatie/laravel-package-tools": "^1.92",
+        "barryvdh/laravel-dompdf": "^3.1",
+        "dgtlinf/salary-calculator": "^1.0.31"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Dgtlinf\\Payslip\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Digital Infinity",
+            "email": "goran@digitalinfinity.rs"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dgtlinf\\Payslip\\PayslipServiceProvider"
+            ],
+            "aliases": {
+                "Payslip": "Dgtlinf\\Payslip\\Facades\\Payslip"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
